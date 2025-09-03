@@ -1,0 +1,58 @@
+<div style="padding: 20px;">
+    <div class="heading">All Patients</div>
+    <div style="padding: 10px 0px;">
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Patient Id</th>
+                    <th>Patient Name</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let patient of allPatients; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ patient?._id }}</td>
+                    <td>{{ patient?.name }}</td>
+                    <td>{{ patient?.gender }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="padding: 5px 20px;">
+    <div (click)="addNewPatient()" class="addNewPatientBtn">Add New Patient</div>
+</div>
+
+<div class="main-container" *ngIf="showAddPatient">
+    <div class="heading">Add Patient</div>
+
+    <div class="raw">
+        <div class="label">Name</div>
+        <input type="text" [(ngModel)]="name" />
+    </div>
+
+    <div class="raw">
+        <div class="label">Age</div>
+        <input type="text" [(ngModel)]="age" />
+    </div>
+
+    <div class="raw">
+        <div class="label">Gender</div>
+        <input type="text" [(ngModel)]="gender" />
+    </div>
+
+    <div class="raw">
+        <div class="label">Mobile No</div>
+        <input type="number" [(ngModel)]="mobileNo" />
+    </div>
+
+    <div class="raw">
+        <div class="label">Address</div>
+        <input type="text" [(ngModel)]="address" />
+    </div>
+    <div style="padding: 5px 0px;">
+        <div (click)="onSubmit()" class="submitBtn">Submit</div>
+    </div>
+</div>

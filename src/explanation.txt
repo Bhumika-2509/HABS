@@ -1,0 +1,4 @@
+
+ [()] banana-in-a-box, representing two-way binding.
+The ngModel directive is used in Angular to bind the value of an input field to a variable in your component.
+It enables two-way data binding between the HTML and the TypeScript code.

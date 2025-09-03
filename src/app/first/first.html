@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="addDocHeading">Add Doctor</div>
+
+  <div class="raw">
+    <div class="label">Name</div>
+    <input type="text" [(ngModel)]="name" />
+  </div>
+
+  <div class="raw">
+    <div class="label">Specialization</div>
+    <input type="text" [(ngModel)]="specialization" />
+  </div>
+
+  <div class="raw">
+    <div class="label">Experience</div>
+    <input type="number" [(ngModel)]="experience" />
+  </div>
+
+  <div (click)="onSubmit()" class="submitBtn">Submit</div>
+</div>

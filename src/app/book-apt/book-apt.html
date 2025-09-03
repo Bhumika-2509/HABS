@@ -1,0 +1,15 @@
+<div class="main-container">
+    <div class="heading">Book Appointment</div>
+     <div class="raw">
+        <div class="label">Doctor Id</div>
+        <input type="text" [(ngModel)]="doctorId" />
+    </div>
+
+    <div class="raw">
+        <div class="label">Patient Id</div>
+        <input type="text" [(ngModel)]="patientId" />
+    </div>
+    <div style="padding: 5px 0px;">
+        <div (click)="onBookClick()" class="bookBtn">Book</div>
+    </div>
+</div>

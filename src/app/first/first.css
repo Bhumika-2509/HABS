@@ -1,0 +1,29 @@
+.addDocHeading {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-container {
+    padding: 10px;
+    border: 1px solid lightgray;
+    max-width: 500px;
+}
+
+.raw {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+}
