@@ -28,10 +28,10 @@ export class Patient {
 
   getAllPatients() {
     this.patientService.getAllPatients()
-    .subscribe( res => {
-      this.allPatients = res;
-    })
-    }
+      .subscribe(res => {
+        this.allPatients = res;
+      })
+  }
 
   addNewPatient() {
     this.showAddPatient = true;

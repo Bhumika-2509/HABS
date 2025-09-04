@@ -9,20 +9,22 @@ import { Router } from '@angular/router';
 })
 export class Layout {
 
-    constructor(
-    private route: Router
-  ) { }
+  constructor( private route: Router ) { }
 
-  handleAddDoctorClick(){
+  handleAddDoctorClick() {
     this.route.navigate(['/addDoctor']);
   }
 
-  handleAddPatientClick(){
+  handleAddPatientClick() {
     this.route.navigate(['/addPatient']);
   }
 
-  handleBookAptClick(){
+  handleBookAptClick() {
     this.route.navigate(['/bookApt']);
+  }
+
+  handleCreateNewSlot() {
+    this.route.navigate(['/createNewSlot']);
   }
 
 }

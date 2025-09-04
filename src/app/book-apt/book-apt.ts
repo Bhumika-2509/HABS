@@ -1,7 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BookAptService } from '../services/bookApt/book-apt-service';
+import { BookAptService } from '../services/bookAptService/book-apt-service';
 
 @Component({
   selector: 'app-book-apt',
