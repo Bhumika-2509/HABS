@@ -53,6 +53,7 @@ export class Patient {
             this.gender = '';
           this.mobileNo = null;
           this.address = '';
+          this.getAllPatients()
         },
         error: (err) => {
           console.log("Error occured", err);

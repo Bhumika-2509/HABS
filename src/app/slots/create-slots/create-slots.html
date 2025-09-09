@@ -8,25 +8,30 @@
                 <td>Status</td>
             </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let slot of allAvlSlots; let i = index">
             <tr>
-                <td>1</td>
-                <td>02:00 AM</td>
-                <td>A</td>
+                <td>{{ i + 1}}</td>
+                <td>{{ slot.slotTime }}</td>
+                <td>{{ slot.status }}</td>
             </tr>
         </tbody>
     </table>
 </div>
+<div style="padding: 5px 20px;">
+    <div (click)="handleAddNewSlotClick()" class="createNewSlotBtn">Create New Slot</div>
+</div>
 
-<!-- <div (click)="handleAddNewSlotClick()">Create New Slot</div> -->
 
-<!-- <div *ngIf="showCreateNewSlot">
+<div *ngIf="showCreateNewSlot">
     <div>
         <div class="label">Slot Time</div>
-        <input type="text" ([ngModel])="slotTime" />
+        <input type="text" [(ngModel)]="slotTime" />
     </div>
     <div>
         <div class="label">Status</div>
-        <input type="text" ([ngModel])="status" />
+        <input type="text" [(ngModel)]="status" />
     </div>
-</div> -->
+    <div style="padding: 5px 0px;">
+        <div (click)="onSubmit()" class="submitBtn">Submit</div>
+    </div>
+</div>

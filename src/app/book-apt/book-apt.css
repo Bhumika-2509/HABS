@@ -20,3 +20,15 @@
     text-align: center;
     cursor: pointer;
 }
+
+.createNewAptBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #0095ff;
+    color: white;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+}

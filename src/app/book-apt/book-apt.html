@@ -1,6 +1,34 @@
-<div class="main-container">
-    <div class="heading">Book Appointment</div>
-     <div class="raw">
+<div>
+    <div>All Appointments</div>
+    <div>
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <tr>
+                    <td>S.no</td>
+                    <td>Patient Id</td>
+                    <td>Doctor ID</td>
+                    <td>Date</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let apt of allAppointments; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{apt.patientId}}</td>
+                    <td>{{apt.doctorId}}</td>
+                    <td>{{apt.createdAt}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div style="padding: 5px 20px;">
+    <div (click)="createNewApt()" class="createNewAptBtn">Create New Appointment</div>
+</div>
+
+<div class="main-container" *ngIf="showCreateNewApt">
+    <div class="heading">Create New Appointment</div>
+    <div class="raw">
         <div class="label">Doctor Id</div>
         <input type="text" [(ngModel)]="doctorId" />
     </div>

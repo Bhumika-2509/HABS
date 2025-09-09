@@ -1,0 +1,23 @@
+.createNewSlotBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #0095ff;
+    color: white;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submitBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #00ffe5;
+    color: white;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
